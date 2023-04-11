@@ -19,9 +19,11 @@
 .card, .Card{
   width: 250px;
   height: 400px;
-  background-color: grey;
+  background-color: darkblue;
+  opacity: 50%;
   margin: 10px;
-  border: inset thick white;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 /* There are two card class incase somone decides to use a capital letter for .Card */
 
