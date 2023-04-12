@@ -1,13 +1,12 @@
-import Card from '../Card/index.js';
-import './App.css';
 import React from 'react';
-import Button from '../Button/index.js';
+import Card from '../Card';
+import './App.css';
 
 function App() {
+	const buttonText = 'more';
 	return (
 		<div className='App'>
-			<Card title='Title 1' someText='This is a card' />
-			<Button buttonText='See more' />
+			<Card title='Title 1' someText={buttonText} />
 		</div>
 	);
 }

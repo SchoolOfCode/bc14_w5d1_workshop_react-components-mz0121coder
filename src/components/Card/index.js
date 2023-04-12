@@ -1,10 +1,14 @@
 /*Inside index.js, create a functional component that returns a JSX element for your card.*/
 
-export default function Card(props) {
+import React from 'react';
+import Button from '../Button';
+
+function Card(props) {
 	return (
 		<div className='card'>
 			<h3>{props.title}</h3>
 			<p>{props.someText}</p>
+			<Button buttonText={props.someText} />
 			<img
 				alt='soc'
 				width={'100%'}
@@ -13,3 +17,5 @@ export default function Card(props) {
 		</div>
 	);
 }
+
+export default Card;
